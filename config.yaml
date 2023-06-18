@@ -1,0 +1,104 @@
+resources:
+  # Web UI
+  - url: https://github.com/AUTOMATIC1111/stable-diffusion-webui
+    download_directory: /home/demo/source/stable-diffusion-webui
+    method: git
+  # Models
+  - url: https://civitai.com/api/download/models/84576 # Reliberate
+    download_directory: /home/demo/source/stable-diffusion-webui/models/Stable-diffusion
+    method: wget
+    file_name: reliberate_v10.safetensors
+  - url: https://civitai.com/api/download/models/94081 # Dreamshaper
+    download_directory: /home/demo/source/stable-diffusion-webui/models/Stable-diffusion
+    method: wget
+    file_name: dreamshaper_631BakedVae.safetensors
+  - url: https://civitai.com/api/download/models/76907 # GhostMix
+    download_directory: /home/demo/source/stable-diffusion-webui/models/Stable-diffusion
+    method: wget
+    file_name: ghostmix_v20Bakedvae.safetensors
+  - url: https://civitai.com/api/download/models/29460 # Realistic Vision
+    download_directory: /home/demo/source/stable-diffusion-webui/models/Stable-diffusion
+    method: wget
+    file_name: realisticVisionV20_v20NoVAE.safetensors
+  # Embeddings
+  - url: https://huggingface.co/embed/negative
+    download_directory: /home/demo/source/stable-diffusion-webui/embeddings/negative
+    method: git
+  - url: https://huggingface.co/embed/lora
+    download_directory: /home/demo/source/stable-diffusion-webui/models/Lora/positive
+    method: git
+  # Upscaler
+  - url: https://huggingface.co/embed/upscale/resolve/main/4x-UltraSharp.pth
+    download_directory: /home/demo/source/stable-diffusion-webui/models/ESRGAN
+    method: wget
+  # Additional Extensions
+  - url: https://github.com/Vetchems/sd-civitai-browser
+    download_directory: /home/demo/source/stable-diffusion-webui/extensions/sd-civitai-browser
+    method: git
+  - url: https://github.com/kohya-ss/sd-webui-additional-networks
+    download_directory: /home/demo/source/stable-diffusion-webui/extensions/sd-webui-additional-networks
+    method: git
+  - url: https://github.com/Mikubill/sd-webui-controlnet
+    download_directory: /home/demo/source/stable-diffusion-webui/extensions/sd-webui-controlnet
+    method: git
+  - url: https://github.com/etherealxx/batchlinks-webui
+    download_directory: /home/demo/source/stable-diffusion-webui/extensions/batchlinks-webui
+    method: git
+  - url: https://github.com/catppuccin/stable-diffusion-webui
+    download_directory: /home/demo/source/stable-diffusion-webui/extensions/stable-diffusion-webui-catppuccin
+    method: git
+  - url: https://github.com/KohakuBlueleaf/a1111-sd-webui-lycoris
+    download_directory: /home/demo/source/stable-diffusion-webui/extensions/a1111-sd-webui-lycoris
+    method: git
+  - url: https://github.com/AUTOMATIC1111/stable-diffusion-webui-rembg
+    download_directory: /home/demo/source/stable-diffusion-webui/extensions/stable-diffusion-webui-rembg
+    method: git
+  - url: https://github.com/ashen-sensored/stable-diffusion-webui-two-shot
+    download_directory: /home/demo/source/stable-diffusion-webui/extensions/stable-diffusion-webui-two-shot
+    method: git
+  - url: https://github.com/fkunn1326/openpose-editor
+    download_directory: /home/demo/source/stable-diffusion-webui/extensions/openpose-editor
+    method: git
+  # Controlnet Models
+  - url: https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11e_sd15_ip2p.pth
+    download_directory: /home/demo/source/stable-diffusion-webui/extensions/sd-webui-controlnet/models
+    method: wget
+  - url: https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11e_sd15_shuffle.pth
+    download_directory: /home/demo/source/stable-diffusion-webui/extensions/sd-webui-controlnet/models
+    method: wget
+  - url: https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11f1e_sd15_tile.pth
+    download_directory: /home/demo/source/stable-diffusion-webui/extensions/sd-webui-controlnet/models
+    method: wget
+  - url: https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11f1p_sd15_depth.pth
+    download_directory: /home/demo/source/stable-diffusion-webui/extensions/sd-webui-controlnet/models
+    method: wget
+  - url: https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_canny.pth
+    download_directory: /home/demo/source/stable-diffusion-webui/extensions/sd-webui-controlnet/models
+    method: wget
+  - url: https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_inpaint.pth
+    download_directory: /home/demo/source/stable-diffusion-webui/extensions/sd-webui-controlnet/models
+    method: wget
+  - url: https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_lineart.pth
+    download_directory: /home/demo/source/stable-diffusion-webui/extensions/sd-webui-controlnet/models
+    method: wget
+  - url: https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_mlsd.pth
+    download_directory: /home/demo/source/stable-diffusion-webui/extensions/sd-webui-controlnet/models
+    method: wget
+  - url: https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_normalbae.pth
+    download_directory: /home/demo/source/stable-diffusion-webui/extensions/sd-webui-controlnet/models
+    method: wget
+  - url: https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_openpose.pth
+    download_directory: /home/demo/source/stable-diffusion-webui/extensions/sd-webui-controlnet/models
+    method: wget
+  - url: https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_scribble.pth
+    download_directory: /home/demo/source/stable-diffusion-webui/extensions/sd-webui-controlnet/models
+    method: wget
+  - url: https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_seg.pth
+    download_directory: /home/demo/source/stable-diffusion-webui/extensions/sd-webui-controlnet/models
+    method: wget
+  - url: https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_softedge.pth
+    download_directory: /home/demo/source/stable-diffusion-webui/extensions/sd-webui-controlnet/models
+    method: wget
+  - url: https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15s2_lineart_anime.pth
+    download_directory: /home/demo/source/stable-diffusion-webui/extensions/sd-webui-controlnet/models
+    method: wget
