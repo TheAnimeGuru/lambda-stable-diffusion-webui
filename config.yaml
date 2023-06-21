@@ -35,7 +35,7 @@ resources:
     file_name: realisticVisionV20_v20NoVAE-inpainting.safetensors
   # VAE
   - url: https://huggingface.co/stabilityai/sd-vae-ft-mse-original/blob/main/vae-ft-mse-840000-ema-pruned.safetensors
-    download_directory: home/demo/source/stable-diffusion-webui/models/VAE
+    download_directory: /home/demo/source/stable-diffusion-webui/models/VAE
     method: wget
   # Embeddings
   - url: https://huggingface.co/embed/negative
