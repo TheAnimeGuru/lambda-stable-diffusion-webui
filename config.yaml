@@ -59,6 +59,9 @@ resources:
   - url: https://github.com/fkunn1326/openpose-editor
     download_directory: /home/demo/source/stable-diffusion-webui/extensions/openpose-editor
     method: git
+  - url: https://github.com/Uminosachi/sd-webui-inpaint-anything
+    download_directory: /home/demo/source/stable-diffusion-webui/extensions/sd-webui-inpaint-anything
+    method: git
   # Controlnet Models
   - url: https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11e_sd15_ip2p.pth
     download_directory: /home/demo/source/stable-diffusion-webui/extensions/sd-webui-controlnet/models
