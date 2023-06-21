@@ -20,6 +20,23 @@ resources:
     download_directory: /home/demo/source/stable-diffusion-webui/models/Stable-diffusion
     method: wget
     file_name: realisticVisionV20_v20NoVAE.safetensors
+  # Inpainting Models
+  - url: https://huggingface.co/XpucT/Reliberate/resolve/main/Reliberate-inpainting.safetensors # Reliberate Inpainting
+    download_directory: /home/demo/source/stable-diffusion-webui/models/Stable-diffusion
+    method: wget
+    file_name: Reliberate-inpainting.safetensors
+  - url: https://civitai.com/api/download/models/95087 # Dreamshaper Inpainting
+    download_directory: /home/demo/source/stable-diffusion-webui/models/Stable-diffusion
+    method: wget
+    file_name: dreamshaper_631Inpainting.safetensors
+  - url: https://civitai.com/api/download/models/29461 # Realistic Vision Inpainting
+    download_directory: /home/demo/source/stable-diffusion-webui/models/Stable-diffusion
+    method: wget
+    file_name: realisticVisionV20_v20NoVAE-inpainting.safetensors
+  # VAE
+  - url: https://huggingface.co/stabilityai/sd-vae-ft-mse-original/blob/main/vae-ft-mse-840000-ema-pruned.safetensors
+    download_directory: home/demo/source/stable-diffusion-webui/models/VAE
+    method: wget
   # Embeddings
   - url: https://huggingface.co/embed/negative
     download_directory: /home/demo/source/stable-diffusion-webui/embeddings/negative
